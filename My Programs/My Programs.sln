@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programs", "Programs\Programs.csproj", "{65539703-2058-4EFF-827C-85BC90F3AEB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice.csproj", "{227C495A-AAF0-4AF5-A4D8-B54E2B16F417}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeQuestions", "Practice\PracticeQuestions.csproj", "{227C495A-AAF0-4AF5-A4D8-B54E2B16F417}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
