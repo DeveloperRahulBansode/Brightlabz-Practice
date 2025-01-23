@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programs", "Programs\Programs.csproj", "{65539703-2058-4EFF-827C-85BC90F3AEB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeQuestions", "Practice\PracticeQuestions.csproj", "{227C495A-AAF0-4AF5-A4D8-B54E2B16F417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeSomeProgram", "PracticeSomeProgram\PracticeSomeProgram.csproj", "{EB9B6FB2-9B82-43E5-A751-B3BF6BD68BD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{227C495A-AAF0-4AF5-A4D8-B54E2B16F417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{227C495A-AAF0-4AF5-A4D8-B54E2B16F417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{227C495A-AAF0-4AF5-A4D8-B54E2B16F417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB9B6FB2-9B82-43E5-A751-B3BF6BD68BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9B6FB2-9B82-43E5-A751-B3BF6BD68BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9B6FB2-9B82-43E5-A751-B3BF6BD68BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9B6FB2-9B82-43E5-A751-B3BF6BD68BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

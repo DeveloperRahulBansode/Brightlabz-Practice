@@ -15,6 +15,7 @@
             reverceString.revString();
             SplitAndJoin.splitAndJoin();
             SepeateCharFromData.printChar();
+
         }
     }
 }
