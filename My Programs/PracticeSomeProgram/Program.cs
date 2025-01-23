@@ -21,8 +21,13 @@
             //EqualLineOrNot.EqualLine();
             //CompareTwoLine.CompareTwoLines();
 
+            //Employee.UsingSwitchCase();
+
             //------------------- 23/01/2025 thursday----------------------------------------
-            Employee.UsingSwitchCase();
+            ConditionalProblems.CheckGrade();
+            ConditionalProblems.ConvertTemprature();
+            ConditionalProblems.CalculateMovieTicketPrice();
+            ConditionalProblems.UserLogin();
 
 
 
