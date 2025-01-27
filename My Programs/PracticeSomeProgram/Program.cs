@@ -24,10 +24,11 @@
             //Employee.UsingSwitchCase();
 
             //------------------- 23/01/2025 thursday----------------------------------------
-            ConditionalProblems.CheckGrade();
-            ConditionalProblems.ConvertTemprature();
-            ConditionalProblems.CalculateMovieTicketPrice();
-            ConditionalProblems.UserLogin();
+            //ConditionalProblems.CheckGrade();
+            //ConditionalProblems.ConvertTemprature();
+            //ConditionalProblems.CalculateMovieTicketPrice();
+            //ConditionalProblems.UserLogin();
+            ConditionalProblems.ConditionalProblemsUsingSwitch();
 
 
 

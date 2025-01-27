@@ -149,5 +149,56 @@ namespace PracticeSomeProgram
         }
 
 
+        public static void ConditionalProblemsUsingSwitch()
+        {
+
+            Console.WriteLine("1 --> takes a student's score as input and classifies it into grades (A, B, C, D, or F) based on the following criteria:\nA: 90-100\r\nB: 80-89\r\nC: 70-79\r\nD: 60-69\r\nF: 0-59\r\n");
+            Console.WriteLine("2 --> converts temperatures between Fahrenheit and Celsius based on user input. Use conditional statements to determine the conversion formula based on the user's choice.");
+            Console.WriteLine("3 --> calculates the price of a movie ticket based on the age of the customer and the time of the movie. Implement different pricing rules for children (under 12), adults (12-64), and seniors (65+), and consider matinee discounts.");
+            Console.WriteLine("4 --> Design a simple login system in C# where users provide their username and password. Use conditional statements to check the credentials and provide appropriate feedback, such as successful login, incorrect username, incorrect password, or account locked.");
+            Console.WriteLine();
+
+            while (true) {
+                
+                Console.WriteLine("Enter What you Want to Perform");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice) {
+
+                    case 1:
+                        CheckGrade();
+                        break;
+                    case 2:
+                        ConvertTemprature();
+                        break;
+                    case 3:
+                        CalculateMovieTicketPrice();
+                        break;
+                    case 4:
+                        UserLogin();
+                        break;
+                    case 0:
+                        Console.WriteLine("Byeeeeee...!!");
+                        break;
+                    default: Console.WriteLine("Invalid Choice");
+                        break;
+
+                }
+            
+            
+            
+            
+            
+            }
+
+
+
+
+
+
+
+        }
+                    
+
+
     }
 }

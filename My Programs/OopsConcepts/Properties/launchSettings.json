@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OopsConcepts": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
