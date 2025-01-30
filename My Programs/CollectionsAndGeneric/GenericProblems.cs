@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,14 +28,20 @@ namespace CollectionsAndGeneric
 
             }
         }
-        public static void swapTwoNumbers<T>(T data1, T data2)
+        public static void swapTwoNumbers<T>(T data1, T data2) where T : INumber<T>
         {
-            T temp;
-            temp = data1;
-            data1 = data2;
-            data2 = temp;
+
+            
+            //T temp;
+            //temp = data1;
+            //data1 = data2;
+            //data2 = temp;
+            data1 = data1 + data2;
+            data2 = data1 - data2;
+            data1 = data1 - data2;
             Console.Write(data1 + " " + data2);
         }
+
 
 
     }
