@@ -4,33 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CollectionsAndGeneric
+namespace ReviewProblems
 {
     internal class Student
     {
-        private int id;
-        private string name;
-        private int age;
+        public int id {  get; set; }
+        public string name {  get; set; }
+        public int age {  get; set; }
 
-        public int Id {
 
-            get { return id; }
-            set {
-
-                if (id! >= 0 && id! <= 100)
-                {
-                    Console.WriteLine("Plz Inter valid id");
-                }
-                else
-                {
-                    this.id = value;
-                }
-
-            }
-
-        }
-
-        public Student() { }
 
         public Student(int id, string name, int age)
         {
@@ -44,9 +26,5 @@ namespace CollectionsAndGeneric
         {
             return "Student [ Student Id : " + id + ", Student Name : " + name + ", Student Age : " + age + " ]";
         }
-
-
-
-
     }
 }

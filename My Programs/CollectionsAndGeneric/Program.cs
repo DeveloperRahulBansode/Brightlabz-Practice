@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.IO;
 using System.Net.Http.Headers;
 using System.Numerics;
@@ -58,56 +59,172 @@ namespace CollectionsAndGeneric
             //Console.WriteLine();
 
 
+            ///
+            //  List<Student> data = new List<Student>();
+            //  data.Add(new Student(1, "rahul", 24));
+            //  data.Add(new Student(2, "Naveen", 20));
+            //  data.Add(new Student(3, "lakshmiPriya", 20));
+            //  data.Add(new Student(4, "Pranita", 20));
+            //  foreach (var item in data)
+            //  {
+            //      Console.WriteLine(item.ToString());
 
-            List<Student> list2 = new List<Student>();
-            list2.Add(new Student(1, "rahul", 24));
-            list2.Add(new Student(2, "Naveen", 20));
-            list2.Add(new Student(3, "lakshmiPriya", 20));
-            list2.Add(new Student(4, "Pranita", 20));
-            foreach (var item in list2)
-            {
-                Console.WriteLine(item.toString());
+            //  }
+            //  data.RemoveAt(2);
 
-            }
+            //  SortedList<int,Student> value=new SortedList<int, Student>();
 
-            LinkedList<Student> students = new LinkedList<Student>();
-            students.AddLast(new Student(1, "Rahul", 24));
-            students.AddLast(new Student(2, "Priya", 22));
-            students.AddFirst(new Student(0, "Naveen", 20));
+            //  value.Add(1, new Student(1,"rahul",20));
+            //  value.Add(2, new Student(2,"pratik",24)); 
+            //  value.Add(3, new Student(3,"Pranav",25));
 
-            foreach (Student student in students)
-            {
-                Console.WriteLine(student.toString());
-            }
+            //  value.Remove(3);
 
+            //  foreach (var item in value)
+            //  {
+            //      Console.WriteLine(item);
+            //  }
 
-            Student[] students2 = new Student[5];
-            students2[0] = new Student(1, "hdhd", 20);
-
-
-            Stack<Student> stack = new Stack<Student>();
-
-            // Push (Add)
-            stack.Push(new Student(1, "Rahul", 24));
-            stack.Push(new Student(2, "Priya", 22));
-
-            // Pop (Remove)
-            Console.WriteLine("Popped: " + stack.Pop().toString());
-
-            stack.Push(new Student(3, "Priya", 22));
-
-            // Peek (Get Last Inserted Without Removing)
-            Console.WriteLine("Top of Stack: " + stack.Peek().toString());
-            stack.Push(new Student(4, "Priya", 22));
-
-            // Count
-            Console.WriteLine("Stack Count: " + stack.Count);
+            //  Dictionary<int, Student> keyVallue= new Dictionary<int, Student>();
 
 
+            //  Stack<Student> stack= new Stack<Student>();
 
+            //  stack.Push(new Student());
+            //  stack.Pop();
+
+
+            //HashSet<Student> keys= new HashSet<Student>();
+
+            //  //LambdaExpression lambda = new();
+            //  //lambda.LambdaDisplay();
+            //  Console.WriteLine();
+
+            //  LambdaExpression.GetAllEmployees().ForEach(data => Console.WriteLine(data.ToString()));
+            //  LambdaExpression.GetAllEmployees().Add(new LambdaExpression { ID = 111, Name = "Pooja", Salary = 10000, Department = "IT" });
+
+            //  Func<float, float> multiply = (num) => num * 50.20F;
+            //  Console.WriteLine(multiply(50));
+
+
+
+            //LINQ Programs
+
+            List<int> list = new List<int>() { 1,2,3,4,5,6,7,8,9,10};
+            LINQPrograms.EvenNumberFromList(list);
+            Console.WriteLine();
+
+            List<string> list2 = new List<string>() { "Rahul", "Aman", "Arman", "Rameshwar", "Aakash" };
+            LINQPrograms.FindString(list2);
+            Console.WriteLine();
+
+            Console.WriteLine();
+            List<int> list3 = new List<int>(){ 1,2,3,4,6,7,8,9,10};
+            LINQPrograms.SortInt(list3);
+            Console.WriteLine();
+
+            Console.WriteLine();
+            list = new List<int>() { 100, 24, 35, 55, 89, 120, 40, 65 };
+            LINQPrograms.CheckGreterThan(list);
+
+            Console.WriteLine();
+            List<string> list4 = new List<string>() { "Rahul", "Aman", "Arman", "Rameshwar", "Aakash" };
+            LINQPrograms.CheckStringCount(list4);
+
+            Console.WriteLine();
+            list = new List<int>() { 1,11,3,20,22,6,7,8,9,10};
+            LINQPrograms.CheckDistinct(list);
+
+            Console.WriteLine();
+            list=new List<int> { 1,2,3,4,5,6,7,8,9,10};
+            LINQPrograms.SumOfOdd(list);
+
+            Console.WriteLine();
+            list = new List<int>() { 55, 85, 71, 30, 25, 01, 85 };
+            LINQPrograms.FindMax(list);
+
+            Console.WriteLine();
+            list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            LINQPrograms.SquareOfNumber(list);
+
+
+            Console.WriteLine();
+            list4 = new List<string>() { "www.google.com", "www.mkcl.org", "www.w3school.edu", "www.yahoo.com", "www.gmail.com" };
+            LINQPrograms.FindStringInclude(list4);
+
+
+            //Intermediat
+            Console.WriteLine();
+            list4 = new List<string>() { "Rahul", "Aman", "Arman", "Rameshwar", "Aakash" };
+            LINQPrograms.StringOfFirstLetter(list4);
+
+
+
+            Console.WriteLine();
+            list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            LINQPrograms.HighestThreeNumber(list);
+
+            Console.WriteLine();
+            LINQPrograms.EmployeeSalary();
+
+
+            Console.WriteLine();
+            list= new List<int>() { 1,-2,-4,6,-4,8,-7,3,9 };   
+            LINQPrograms.PositiveNumbers(list);
+
+            Console.WriteLine();
+            list = new List<int>() {25,9,22,35,12,15,82,30,77 };
+            LINQPrograms.DivisablByThreeAndFiveNumbers(list);
+
+
+            Console.WriteLine();
+            list = new List<int>() { 1, 2, 3, 4, 7, 8, 9, 10, 11 };
+            LINQPrograms.CombineUniqueList(list);
+
+            Console.WriteLine();
+            LINQPrograms.PrintStudentNameViaMarks();
+
+
+            Console.WriteLine();
+            list4 = new List<string>() { "Rahul", "Aman", "Arman", "Rameshwar", "Aakash" };
+            LINQPrograms.LargestString(list4);
+
+            Console.WriteLine();
+            LINQPrograms.NotInStockProduct();
+
+            Console.WriteLine();
+            List<float> fList = new List<float> { 1.5f,5.5f,6.3f,9.2f,8.88f };
+            LINQPrograms.AverageOfFloat(fList);
+
+            Console.WriteLine();
+            LINQPrograms.printDepartment();
+
+            Console.WriteLine();
+            list = new List<int>() { 1,2,3,4,5,6,7,8,9};
+
+            LINQPrograms.SecHighestNumber(list);
+
+
+            Console.WriteLine();
+            LINQPrograms.CustomerOrder();
+
+
+            //LINQPrograms.Employee.adddata(1, "rahul", 50000);
+            //LINQPrograms.Employee.ptintList();
+
+
+            Console.WriteLine();
+            LINQPrograms.NestedList();
+
+            Console.WriteLine();
+            LINQPrograms.FilterDuplicateWords("Fear leads  anger anger leads to hatred hatred leads to conflict conflict leads to suffering");
+
+            Console.WriteLine();
+            LINQPrograms.FilterMostDuplicateWords("Fear leads anger leads to hatred hatred leads to conflict conflict leads to suffering");
 
 
 
         }
     }
+    
 }

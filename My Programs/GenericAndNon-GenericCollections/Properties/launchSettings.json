@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GenericAndNon-GenericCollections": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

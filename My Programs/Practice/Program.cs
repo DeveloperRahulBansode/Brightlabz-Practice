@@ -27,6 +27,7 @@ namespace PracticeQuestions
 
             //Console.WriteLine();
             //Console.WriteLine("Goodbye!");
+
             SingleLinkList list = new SingleLinkList();
 
             list.addfirst("A");
