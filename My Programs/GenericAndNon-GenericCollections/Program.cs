@@ -5,25 +5,66 @@
         static List<Employee> employeeData = new List<Employee>();
         public static void Main(string[] args)
         {
-            addEmployee(new Employee(1, "Rahul", 20));
-            addEmployee(new Employee(2, "pratik", 24));
-            addEmployee(new Employee(3, "naveen", 20));
-            addEmployee(new Employee(4, "Rameshwar", 24));
-            addEmployee(new Employee(5, "vishal", 20));
-            addEmployee(new Employee(6, "Pranav", 24));
-            printEmployee();
+            //addEmployee(new Employee(1, "Rahul", 20));
+            //addEmployee(new Employee(2, "pratik", 24));
+            //addEmployee(new Employee(3, "naveen", 20));
+            //addEmployee(new Employee(4, "Rameshwar", 24));
+            //addEmployee(new Employee(5, "vishal", 20));
+            //addEmployee(new Employee(6, "Pranav", 24));
+            //printEmployee();
 
 
-            updateEmployee(3, "naveen", 21);
-            printEmployee();
+            //updateEmployee(3, "naveen", 21);
+            //printEmployee();
 
-            deleteEmployee(4);
-            printEmployee();
+            //deleteEmployee(4);
+            //printEmployee();
+
+
+            Qustions.EvenOrOddNumber(20);
+            Qustions.equalString("rahul", "rahul");
+            Qustions.stringPalyndrom("mam");
+
+            //delegets
+            //Calculate cal = new Calculate(Qustions.addData);
+            //cal(10,20);
+
+            Dictionary<int, Calculate> cal = new Dictionary<int, Calculate>()
+            {
+                {1,Qustions.addData },
+                {2,Qustions.subData }
+            };
+
+
+            while (true) 
+            {
+                Console.WriteLine(" -Operatios List-");
+                Console.WriteLine("1. Add Two Numbers");
+                Console.WriteLine("2. Subtract Two Numbers");
+
+                Console.WriteLine("Enter Your Choice=");
+                int choice =Int32.Parse(Console.ReadLine());
+
+                if (cal.ContainsKey(choice)) 
+                {
+                    cal[choice](10,20);
+
+                    if(choice==3) break;
+
+      
+                }
+                else
+                {
+                    Console.WriteLine("InValid Choice");
+                }
             
+            
+            
+            }
 
 
 
-
+              
 
 
         }

@@ -22,8 +22,11 @@ namespace PracticeConcept
             Console.WriteLine("Enter Employee Email Id");
             string email = Console.ReadLine();
 
+            Console.WriteLine("Enter Employee Contact No");
+            string contact = Console.ReadLine();
 
-            var emp = new UserRegistration(id,name,userID,pass,email);
+
+            var emp = new UserRegistration(id,name,userID,pass,email,contact);
 
             var contax=new ValidationContext(emp);
             var result=new List<ValidationResult>();
@@ -31,7 +34,9 @@ namespace PracticeConcept
 
             if (isValid) {
 
+                Console.WriteLine();
                 Console.WriteLine("Registration Sucessfully... ");
+                Console.WriteLine();
                 Console.WriteLine(emp.ToString());
 
 
@@ -42,6 +47,7 @@ namespace PracticeConcept
                 result.ForEach(error => Console.WriteLine("-> "+error.ErrorMessage));
 
             }
+
 
 
 
