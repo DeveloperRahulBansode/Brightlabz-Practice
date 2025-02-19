@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SQL_CURD": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

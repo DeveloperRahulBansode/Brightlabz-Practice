@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "InputOutputPackage": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

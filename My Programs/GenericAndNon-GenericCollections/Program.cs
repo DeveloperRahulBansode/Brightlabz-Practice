@@ -26,10 +26,11 @@
             Qustions.stringPalyndrom("mam");
 
             //delegets
-            //Calculate cal = new Calculate(Qustions.addData);
-            //cal(10,20);
+            Calculate cal = new Calculate(Qustions.addData);
+            cal(10, 20);
 
-            Dictionary<int, Calculate> cal = new Dictionary<int, Calculate>()
+            Console.WriteLine();
+            Dictionary<int, Calculate> calc = new Dictionary<int, Calculate>()
             {
                 {1,Qustions.addData },
                 {2,Qustions.subData }
@@ -39,15 +40,16 @@
             while (true) 
             {
                 Console.WriteLine(" -Operatios List-");
+
                 Console.WriteLine("1. Add Two Numbers");
                 Console.WriteLine("2. Subtract Two Numbers");
 
                 Console.WriteLine("Enter Your Choice=");
                 int choice =Int32.Parse(Console.ReadLine());
 
-                if (cal.ContainsKey(choice)) 
+                if (calc.ContainsKey(choice)) 
                 {
-                    cal[choice](10,20);
+                    calc[choice](10,20);
 
                     if(choice==3) break;
 

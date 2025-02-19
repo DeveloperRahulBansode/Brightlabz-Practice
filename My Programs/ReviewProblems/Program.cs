@@ -15,7 +15,7 @@ namespace ReviewProblems
             ////Q2
             //Console.WriteLine();
             //TypeConversion.TypeConversionOfData();
-            
+
             ////Q3
             //Console.WriteLine();
             //AccessModifiresClassess acess = new AccessModifiresClassess();
@@ -25,7 +25,7 @@ namespace ReviewProblems
             //acess.internalMethod();
             //acess.protectedInternalMethod();
             ////acess.privateProtectedMethod();
-            
+
 
 
             ////Q5
@@ -58,132 +58,200 @@ namespace ReviewProblems
             //triangle.DisplayInfo();
 
 
+            /////week 2 
             //Q1 and Q2
-            int[] intArray= {5,10,7,3,24,45};
-            double[] doubleArray = {2.227,8.77,8.987,4.354,5.55,7.467 };
-            float[] floatArray = { 2.5f, 5.5f, 6.2f, 5.7f, 8.8f };
+            //int[] intArray= {5,10,7,3,24,45};
+            //double[] doubleArray = {2.227,8.77,8.987,4.354,5.55,7.467 };
+            //float[] floatArray = { 2.5f, 5.5f, 6.2f, 5.7f, 8.8f };
 
-            GenericMaxValue.FindMaxValueInArray(intArray);
-            GenericMaxValue.FindMaxValueInArray(doubleArray);
-            GenericMaxValue.FindMaxValueInArray(floatArray);
+            //GenericMaxValue.FindMaxValueInArray(intArray);
+            //GenericMaxValue.FindMaxValueInArray(doubleArray);
+            //GenericMaxValue.FindMaxValueInArray(floatArray);
 
 
 
             //Q3 and Q4
 
-            OverloadingAndOverriding.addition(50,60);
-            OverloadingAndOverriding.addition(32.0f,50.5f);
-           
-
-            Addition add = new Addition(10,20);
-            add.Calculator();
+            // OverloadingAndOverriding.addition(50,60);
+            // OverloadingAndOverriding.addition(32.0f,50.5f);
 
 
-            //Q5
-            List<Employee> employeeData = new List<Employee>();
-
-            employeeData.Add(new Employee(1, "Rahul", 20));
-            employeeData.Add(new Employee(2, "pratik", 24));
-            employeeData.Add(new Employee(3, "naveen", 20));
-            employeeData.Add(new Employee(4, "Rameshwar", 24));
-            employeeData.Add(new Employee(5, "vishal", 20));
-            employeeData.Add(new Employee(6, "Pranav", 24));
-
-            foreach (Employee e in employeeData)
-            {
-                Console.WriteLine(e.ToString());
-            }
+            // Addition add = new Addition(10,20);
+            // add.Calculator();
 
 
-            //remove
-           employeeData.Remove(new Employee(6, "Pranav", 24));
+            // //Q5
+            // List<Employee> employeeData = new List<Employee>();
 
-            Console.WriteLine("Employee 6 Deleted" + "\n");
+            // employeeData.Add(new Employee(1, "Rahul", 20));
+            // employeeData.Add(new Employee(2, "pratik", 24));
+            // employeeData.Add(new Employee(3, "naveen", 20));
+            // employeeData.Add(new Employee(4, "Rameshwar", 24));
+            // employeeData.Add(new Employee(5, "vishal", 20));
+            // employeeData.Add(new Employee(6, "Pranav", 24));
 
-            foreach (Employee e in employeeData)
-            {
+            // foreach (Employee e in employeeData)
+            // {
+            //     Console.WriteLine(e.ToString());
+            // }
 
-               Console.WriteLine(e.ToString());
-            }
 
-            //Find 
-            Employee? data = employeeData.FirstOrDefault(e => e.Id == 1);
+            // //remove
+            //employeeData.Remove(new Employee(6, "Pranav", 24));
+
+            // Console.WriteLine("Employee 6 Deleted" + "\n");
+
+            // foreach (Employee e in employeeData)
+            // {
+
+            //    Console.WriteLine(e.ToString());
+            // }
+
+            // //Find 
+            // Employee? data = employeeData.FirstOrDefault(e => e.Id == 1);
+
+            // Console.WriteLine();
+            // Console.WriteLine("Employee Id 1 data Found="+data.ToString());
+
+
+            // //Q6
+            // Console.WriteLine();
+            // List<Student> stuData= new List<Student>();
+            // stuData.Add(new Student(1, "Rahul", 20));
+            // stuData.Add(new Student(2, "pratik", 24));
+            // stuData.Add(new Student(3, "naveen", 21));
+            // stuData.Add(new Student(4, "Rameshwar", 25));
+
+            // foreach (Student e in stuData)
+            // {
+            //     Console.WriteLine(e.ToString());
+            // }
+
+            // var sortedStudentName = stuData.OrderBy(s => s.name);
+
+            // var sortedStudentAge = stuData.OrderBy (s => s.age);
+
+            // Console.WriteLine("---------------------Soeted name-------------------");
+            // foreach (var item in sortedStudentName)
+            // {
+            //     Console.WriteLine(item.ToString());
+            // }
+
+
+            // Console.WriteLine("---------------------Soeted Age-------------------");
+            // foreach (var item in sortedStudentAge)
+            // {
+            //     Console.WriteLine(item.ToString());
+            // }
+
+
+
+            // Console.WriteLine();
+
+            // Console.WriteLine("Even in List Of Data");
+            // //Q7
+            // var list = new List<int> { 1, 2, 3 };
+            // var enevnumber = list.Where(n => n % 2 == 0);
+            // foreach (int i in enevnumber) {
+            //     Console.WriteLine(i);
+            // }
+
+
+
+            // //Q8
+            // List<String> Names = new List<String>();
+            // Names.Add("pratik");
+            // Names.Add("rahul");
+            // Names.Add("naveen");
+            // Names.Add("Vishal");
+
+            // Console.WriteLine();
+            // foreach (String s in Names)
+            // {
+            //     Console.WriteLine(s);
+            // }
+
+            // Console.WriteLine();
+            // var sortname = Names.OrderDescending();
+
+            // foreach (var e in sortname)
+            // {
+            //     Console.WriteLine(e);
+            // }
+
+            ///week 3
+            Console.WriteLine("Q1");
+            week3Review.EmailValidate("username@domain.extension");
+            week3Review.PasswordStrengthchecker("Rahul@21");
+            week3Review.PhoneNumberValidate("937-281-9130");
 
             Console.WriteLine();
-            Console.WriteLine("Employee Id 1 data Found="+data.ToString());
+            Console.WriteLine("Q2");
 
-
-            //Q6
-            Console.WriteLine();
-            List<Student> stuData= new List<Student>();
-            stuData.Add(new Student(1, "Rahul", 20));
-            stuData.Add(new Student(2, "pratik", 24));
-            stuData.Add(new Student(3, "naveen", 21));
-            stuData.Add(new Student(4, "Rameshwar", 25));
-
-            foreach (Student e in stuData)
+            try
             {
-                Console.WriteLine(e.ToString());
-            }
+             week3Review.DivisionException(10, 0);
 
-            var sortedStudentName = stuData.OrderBy(s => s.name);
-
-            var sortedStudentAge = stuData.OrderBy (s => s.age);
-
-            Console.WriteLine("---------------------Soeted name-------------------");
-            foreach (var item in sortedStudentName)
+            }catch(DevideByZero d)
             {
-                Console.WriteLine(item.ToString());
+                Console.WriteLine(d.Message);
             }
-
-
-            Console.WriteLine("---------------------Soeted Age-------------------");
-            foreach (var item in sortedStudentAge)
+            catch (InvalidInputFormat e)
             {
-                Console.WriteLine(item.ToString());
-            }
+                Console.WriteLine(e.Message);
 
-
-
-            Console.WriteLine();
-
-            Console.WriteLine("Even in List Of Data");
-            //Q7
-            var list = new List<int> { 1, 2, 3 };
-            var enevnumber = list.Where(n => n % 2 == 0);
-            foreach (int i in enevnumber) {
-                Console.WriteLine(i);
-            }
-
-
-
-            //Q8
-            List<String> Names = new List<String>();
-            Names.Add("pratik");
-            Names.Add("rahul");
-            Names.Add("naveen");
-            Names.Add("Vishal");
-
-            Console.WriteLine();
-            foreach (String s in Names)
-            {
-                Console.WriteLine(s);
             }
 
             Console.WriteLine();
-            var sortname = Names.OrderDescending();
-
-            foreach (var e in sortname)
+            try
             {
-                Console.WriteLine(e);
+                week3Review.AgeException(-20);
+            }catch(ageValidator a)
+            {
+                Console.WriteLine(a.Message);
             }
 
 
+            Console.WriteLine();
+            Console.WriteLine("Q3");
+            try
+            {
+                week3Review.Bank(60000);
+            }catch(InsufficientFundsException i)
+            {
+                Console.WriteLine(i.Message);
+            }
+
+            Console.WriteLine();
+            try
+            {
+                week3Review.E_commerce(0);
+            }
+            catch (ProductOutOfStockException p)
+            {
+                Console.WriteLine(p.Message);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Q4");
+            week3Review.EvenOrOddCheck(30);
+            week3Review.StringLength("rahul", "rahul  ");
+
+            Console.WriteLine();
+            Console.WriteLine("Q5");
+            week3Review.SwapValue(10, 20);
 
 
+            Console.WriteLine();
+            Console.WriteLine("Q7");
+            List<int> numbers = new List<int> { 1, 5, 8, 10, 12, 15 };
+            week3Review.NumberTransform(numbers);
+            week3Review.maxNumber(10,20);
 
+            string s = "sjba";
+            var ch = s.ToCharArray():          s.ToUpper();
 
-
+            var a= Char.ToUpper('a');
 
 
         }

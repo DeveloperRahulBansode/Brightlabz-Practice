@@ -1,0 +1,32 @@
+[
+  {
+    "ProductId": 1001,
+    "ProductName": "Hp Laptop",
+    "ProductExpDate": "2025-02-11T17:17:39.099096+05:30",
+    "ProductType": "Electronic"
+  },
+  {
+    "ProductId": 1002,
+    "ProductName": "Linovo Laptop",
+    "ProductExpDate": "2025-02-11T17:17:39.1064715+05:30",
+    "ProductType": "Electronic"
+  },
+  {
+    "ProductId": 1003,
+    "ProductName": "Asus Laptop",
+    "ProductExpDate": "2025-02-11T17:17:39.1064733+05:30",
+    "ProductType": "Electronic"
+  },
+  {
+    "ProductId": 1004,
+    "ProductName": "Apple Laptop",
+    "ProductExpDate": "2025-02-11T17:17:39.1064735+05:30",
+    "ProductType": "Electronic"
+  },
+  {
+    "ProductId": 1005,
+    "ProductName": "Acer Laptop",
+    "ProductExpDate": "2025-02-11T17:17:39.1064735+05:30",
+    "ProductType": "Electronic"
+  }
+]

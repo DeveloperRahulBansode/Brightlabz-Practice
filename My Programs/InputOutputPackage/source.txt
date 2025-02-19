@@ -1,0 +1,4 @@
+File I/O in C# is a fundamental skill for manipulating files
+Reading files involves using classes like File or StreamReader to extract data from existing files
+Writing files entails employing classes like File or StreamWriter to create or modify files
+
